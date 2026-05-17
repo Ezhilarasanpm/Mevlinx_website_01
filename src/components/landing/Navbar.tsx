@@ -68,13 +68,13 @@ export function Navbar() {
       </nav>
 
       {open && (
-        <div className="lg:hidden mx-auto max-w-7xl mt-2 glass-strong rounded-2xl p-4 flex flex-col gap-1 animate-fade-in">
+       <div className="lg:hidden fixed top-20 left-4 right-4 glass-strong rounded-2xl p-4 flex flex-col gap-1 z-50">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-             className="px-4 py-3 text-lg font-medium rounded-lg hover:bg-white/5"
+             className="px-4 py-3 text-lg font-semibold hover:text-white/9"
             >
               {l.label}
             </a>
